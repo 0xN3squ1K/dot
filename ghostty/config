@@ -1,0 +1,97 @@
+#  ████████╗██╗  ██╗███████╗███╗   ███╗███████╗
+#  ╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝
+#     ██║   ███████║█████╗  ██╔████╔██║█████╗  
+#     ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  
+#     ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗
+#     ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝
+#                                              
+#theme = dark:tokyonight,light:tokyonight-day
+#theme = Everforest Dark - Hard
+theme = tokyonight
+#background-opacity = 1
+#background-blur = true
+
+#  ███████╗ ██████╗ ███╗   ██╗████████╗
+#  ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝
+#  █████╗  ██║   ██║██╔██╗ ██║   ██║   
+#  ██╔══╝  ██║   ██║██║╚██╗██║   ██║   
+#  ██║     ╚██████╔╝██║ ╚████║   ██║   
+#  ╚═╝      ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   
+#                                      
+font-family = Iosevka NF
+font-family-bold = Iosevka NF SemiBold
+font-family-italic = VictorMono NFM
+font-family-bold-italic = VictorMono NFM SemiBold
+font-size = 14
+
+#  ███████╗████████╗██╗   ██╗██╗     ███████╗
+#  ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝
+#  ███████╗   ██║    ╚████╔╝ ██║     █████╗  
+#  ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  
+#  ███████║   ██║      ██║   ███████╗███████╗
+#  ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝
+#                                            
+cursor-style = block
+cursor-style-blink = true
+shell-integration = fish
+shell-integration-features = no-cursor,no-title
+mouse-hide-while-typing = true
+gtk-titlebar = false
+gtk-tabs-location = hidden
+
+#  ██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗
+#  ██║    ██║██║████╗  ██║██╔══██╗██╔═══██╗██║    ██║
+#  ██║ █╗ ██║██║██╔██╗ ██║██║  ██║██║   ██║██║ █╗ ██║
+#  ██║███╗██║██║██║╚██╗██║██║  ██║██║   ██║██║███╗██║
+#  ╚███╔███╔╝██║██║ ╚████║██████╔╝╚██████╔╝╚███╔███╔╝
+#   ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚══╝╚══╝ 
+#                                                    
+confirm-close-surface = false
+window-decoration = true
+window-padding-x = 25
+window-padding-y = 25
+window-padding-balance = true
+quick-terminal-position = top
+window-width = 115
+window-height = 35
+window-save-state = always
+
+#  ██╗  ██╗███████╗██╗   ██╗██████╗ ██╗███╗   ██╗██████╗ ███████╗
+#  ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔══██╗██║████╗  ██║██╔══██╗██╔════╝
+#  █████╔╝ █████╗   ╚████╔╝ ██████╔╝██║██╔██╗ ██║██║  ██║███████╗
+#  ██╔═██╗ ██╔══╝    ╚██╔╝  ██╔══██╗██║██║╚██╗██║██║  ██║╚════██║
+#  ██║  ██╗███████╗   ██║   ██████╔╝██║██║ ╚████║██████╔╝███████║
+#  ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝
+#                                                                
+## WINDOWS
+keybind = unconsumed:ctrl+w=close_surface
+## TABS
+keybind = unconsumed:ctrl+t=new_tab
+#keybind = ctrl+w=close_tab
+keybind = unconsumed:ctrl+shift+t=toggle_tab_overview
+keybind = unconsumed:alt+1=goto_tab:1
+keybind = unconsumed:alt+2=goto_tab:2
+keybind = unconsumed:alt+3=goto_tab:3
+keybind = unconsumed:alt+4=goto_tab:4
+keybind = unconsumed:alt+5=goto_tab:5
+## SPLITS
+keybind = unconsumed:ctrl+b>v=new_split:right
+keybind = unconsumed:ctrl+b>h=new_split:down
+keybind = unconsumed:ctrl+space=goto_split:next
+keybind = unconsumed:ctrl+k=goto_split:top
+keybind = unconsumed:ctrl+j=goto_split:bottom
+keybind = unconsumed:ctrl+h=goto_split:left
+keybind = unconsumed:ctrl+l=goto_split:right
+keybind = unconsumed:ctrl+up=resize_split:up,10
+keybind = unconsumed:ctrl+down=resize_split:down,10
+keybind = unconsumed:ctrl+left=resize_split:left,10
+keybind = unconsumed:ctrl+right=resize_split:right,10
+keybind = unconsumed:ctrl+b>e=equalize_splits
+## FONT SIZE
+keybind = unconsumed:ctrl+shift+plus=increase_font_size:3
+keybind = unconsumed:ctrl+minus=decrease_font_size:3
+keybind = unconsumed:ctrl+equal=reset_font_size
+## TEXT
+#keybind = ctrl+a=select_all
+## FILE
+keybind = unconsumed:ctrl+b>s=write_screen_file:paste

@@ -18,8 +18,8 @@ theme = tokyonight
 #  ██║     ╚██████╔╝██║ ╚████║   ██║   
 #  ╚═╝      ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   
 #                                      
-font-family = Iosevka NF
-font-family-bold = Iosevka NF SemiBold
+font-family = Iosevka NFM
+font-family-bold = Iosevka NFM SemiBold
 font-family-italic = VictorMono NFM
 font-family-bold-italic = VictorMono NFM SemiBold
 font-size = 14
@@ -51,10 +51,10 @@ window-decoration = true
 window-padding-x = 25
 window-padding-y = 25
 window-padding-balance = true
-quick-terminal-position = top
-window-width = 115
-window-height = 35
-window-save-state = always
+#quick-terminal-position = center
+window-width = 128
+window-height = 33
+#window-save-state = always
 
 #  ██╗  ██╗███████╗██╗   ██╗██████╗ ██╗███╗   ██╗██████╗ ███████╗
 #  ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔══██╗██║████╗  ██║██╔══██╗██╔════╝

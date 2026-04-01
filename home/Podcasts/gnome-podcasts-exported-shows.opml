@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="2.0">
+  <head>
+    <title>GNOME Podcasts Subscriptions</title>
+  </head>
+  <body>
+    <outline text="DESPIERTA TU CURIOSIDAD" title="DESPIERTA TU CURIOSIDAD" type="rss" xmlUrl="https://feeds.megaphone.fm/ESP3000329196" htmlUrl="https://www.nationalgeographic.es/" />
+    <outline text="Enigmas sin resolver" title="Enigmas sin resolver" type="rss" xmlUrl="https://feeds.simplecast.com/2mEdBakG" htmlUrl="https://enigmas-sin-resolver.simplecast.com/" />
+    <outline text="Espacio en blanco" title="Espacio en blanco" type="rss" xmlUrl="http://api.rtve.es/api/programas/23713/audios.rss" htmlUrl="https://www.rtve.es/play/audios/espacio-en-blanco/" />
+    <outline text="Estoicismo Filosofia" title="Estoicismo Filosofia" type="rss" xmlUrl="https://www.spreaker.com/show/6146778/episodes/feed" htmlUrl="https://www.spreaker.com/podcast/estoicismo-filosofia--6146778" />
+    <outline text="Historia con el móvil" title="Historia con el móvil" type="rss" xmlUrl="https://www.spreaker.com/show/5622038/episodes/feed" htmlUrl="https://www.spreaker.com/podcast/historia-con-el-movil--5622038" />
+    <outline text="Historia en Podcast" title="Historia en Podcast" type="rss" xmlUrl="https://feeds.megaphone.fm/ADSMOVILESPAASL6591275552" htmlUrl="https://audio.adsmovil.com/" />
+    <outline text="Leyendas Legendarias" title="Leyendas Legendarias" type="rss" xmlUrl="https://feeds.simplecast.com/TjkG2gz_" htmlUrl="https://leyendaslegendarias.com/" />
+    <outline text="Modo Taoísmo" title="Modo Taoísmo" type="rss" xmlUrl="https://anchor.fm/s/e4c66288/podcast/rss" htmlUrl="https://substack.com/@elmonasterio" />
+    <outline text="Motivación para la vida" title="Motivación para la vida" type="rss" xmlUrl="https://feeds.simplecast.com/xdKPoudz" htmlUrl="https://podcasters.spotify.com/pod/show/pabol-elhart" />
+    <outline text="Tu Desarrollo Personal" title="Tu Desarrollo Personal" type="rss" xmlUrl="https://feeds.simplecast.com/Ylj2dvqz" htmlUrl="https://podcasters.spotify.com/pod/show/juan-garcia482" />
+  </body>
+</opml>

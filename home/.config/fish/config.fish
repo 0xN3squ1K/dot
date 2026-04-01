@@ -11,65 +11,84 @@ set -g fish_greeting
 # env
 # https://wiki.archlinux.org/title/XDG_Base_Directory
 # xdg
-set -U XDG_DATA_HOME $HOME/.local/share
-set -U XDG_CONFIG_HOME $HOME/.config
-set -U XDG_CACHE_HOME $HOME/.cache
+set -Ux XDG_CACHE_HOME $HOME/.cache
+set -Ux XDG_CONFIG_HOME $HOME/.config
+set -Ux XDG_STATE_HOME $HOME/.local/state
+set -Ux XDG_DATA_HOME $HOME/.local/share
 # python
-set -U PYTHONPYCACHEPREFIX $HOME/.cache/python #~/.python_history
-set -U PYTHONUSERBASE $HOME/python
+set -Ux PYTHON_HISTORY $XDG_STATE_HOME/python_history
+set -Ux PYTHONPYCACHEPREFIX $XDG_CACHE_HOME/python
+set -Ux PYTHONUSERBASE $XDG_DATA_HOME/python
 # rclone
-set -U RCLONE_CONFIG_DIR $HOME/.config/rclone
+set -Ux RCLONE_CONFIG_DIR $XDG_CONFIG_HOME/rclone
 # browser
-set -Ux BROWSER "flatpak run app.zen_browser.zen"
+set -Ux BROWSER "flatpak run org.mozilla.firefox"
 
 # startx
 #alias s='startx ~/.config/X11/xinitrc'
 
 # editor
-alias vim='nvim'
-alias n='nvim'
-alias v='nvim'
-alias sn='doas nvim'
-alias sv='doas nvim'
+alias vim 'nvim'
+alias dvim 'doas nvim'
 
 # confirm before overwriting something
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -I'
+alias cp 'cp -i'
+alias mv 'mv -i'
+alias rm 'rm -I'
 
 # get error messages from journalctl
-alias jctl='journalctl -p 3 -xb'
-alias cleanjctl='doas journalctl --vacuum-time=1days'
+abbr jctl 'journalctl -p 3 -xb'
+abbr cleanjctl 'doas journalctl --vacuum-time=1days'
 
 # commands
-alias ls='lsd --group-directories-first'
-alias l='ls -l'
-alias la='ls -A'
-alias lla='ls -lA'
-#alias ls='ls -hN --color=auto --group-directories-first'
-alias grep='grep --color=auto'
-alias diff='diff --color=auto'
-alias ..='cd ..'
-alias df='df -h'
-alias free='free -h'
-alias lsblk='lsblk -p'
-alias zramctl='zramctl --output-all'
-alias tree='tree -C'
+#alias ls='lsd --group-directories-first'
+alias l 'ls -l'
+alias la 'ls '
+alias lla 'ls -lA'
+alias ls 'ls -hN --color=auto --group-directories-first'
+alias grep 'grep --color=auto'
+alias diff 'diff --color=auto'
+alias .. 'cd ..'
+alias df 'df -h'
+alias free 'free -h'
+alias lsblk 'lsblk -p'
+alias zramctl 'zramctl --outputll'
+alias tree 'tree -C'
 
 # pacman
-alias info='pacman -Si'
-alias search='pacman -Ss'
-alias files='pacman -Ql'
-alias pkgs='pacman -Q | wc -l'
-alias remove='doas pacman -Rns'
-alias update='doas pacman -Syu'
-alias pkginstall='doas pacman -S'
-alias orphans='pacman -Qtd'
-alias delorphans='doas pacman -Rns $(pacman -Qdtq)'
-alias cleanpac='doas pacman -Scc'
+abbr info 'pacman -Si'
+abbr search 'pacman -Ss'
+abbr files 'pacman -Ql'
+abbr pkgs 'pacman -Q | wc -l'
+abbr remove 'doas pacman -Rns'
+abbr update 'doas pacman -Syu'
+abbr pkginstall 'doas pacman -S'
+abbr orphans 'pacman -Qtd'
+abbr delorphans 'doas pacman -Rns $(pacman -Qdtq)'
+abbr cleanpac 'doas pacman -Scc'
 
 # cache
-alias cleancache='rm -rf ~/.cache/*'
+abbr cleancache 'rm -rf ~/.cache/*'
+
+# tmux
+abbr tn 'tmux new-session -s'
+abbr tl 'tmux list-sessions'
+abbr ta 'tmux attach-session'
+
+# INSTALL PACKAGES WITH FLATPAK
+#abbr f 'flatpak install'
+abbr fu 'flatpak update'
+#abbr fr 'flatpak remove'
+#abbr fs 'flatpak search'
+abbr fcl 'flatpak uninstall --unused'
+abbr fls 'flatpak list --columns=application'
+
+# obsidian
+alias ocheck 'rclone check --progress ~/Documents/obsidian encrypted-dropbox:obsidian'
+alias osync 'rclone sync --progress ~/Documents/obsidian encrypted-dropbox:obsidian'
+
+# fecha de la instalacion
+abbr dateinstall 'stat / | grep -i birth'
 
 # udisks
 alias musb='udisksctl mount --block-device=/dev/sdb1'

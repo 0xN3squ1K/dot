@@ -1,0 +1,122 @@
+Optional dependencies for libvirt
+    dmidecode: DMI system info support
+    dnsmasq: required for default NAT/DHCP for guests
+    gettext: required for libvirt-guests.service [installed]
+    iptables-nft: required for default NAT networking
+    libvirt-python: for virt-qemu-qmp-proxy and virt-qemu-sev-validate commands [pending]
+    libvirt-storage-gluster: Gluster storage backend
+    libvirt-storage-iscsi-direct: iSCSI-direct storage backend
+    lvm2: Logical Volume Manager support
+    openbsd-netcat: for remote management over ssh
+    open-iscsi: iSCSI support via iscsiadm
+    python-cryptography: for virt-qemu-sev-validate command
+    python-lxml: for virt-qemu-sev-validate command
+    qemu-base: QEMU/KVM support
+    qemu-desktop: QEMU/KVM desktop support
+    qemu-emulators-full: Support of additional QEMU architectures
+    radvd: IPv6 RAD support
+    swtpm: TPM emulator support
+
+Optional dependencies for qemu-base
+    qemu-user-static: for static user mode emulation of QEMU targets
+    samba: for SMB/CIFS server support
+    qemu-block-gluster: for Gluster block driver
+    qemu-block-iscsi: for iSCSI block driver
+    qemu-chardev-baum: for Baum chardev driver
+    qemu-docs: for documentation
+    qemu-emulators-full: for all system emulators
+    qemu-full: for a full QEMU installation
+    qemu-hw-s390x-virtio-gpu-ccw: for s390x-virtio-gpu-ccw display device
+    qemu-pr-helper: for persistent reservation utility
+    qemu-system-aarch64: for AARCH64 system emulator
+    qemu-system-alpha: for Alpha system emulator
+    qemu-system-arm: for ARM system emulator
+    qemu-system-avr: for AVR system emulator
+    qemu-system-hppa: for HPPA system emulator
+    qemu-system-m68k: for ColdFire (m68k) system emulator
+    qemu-system-microblaze: for Microblaze system emulator
+    qemu-system-mips: for MIPS system emulator
+    qemu-system-or1k: for OpenRisc32 system emulator
+    qemu-system-ppc: for PPC system emulator
+    qemu-system-riscv: for RISC-V system emulator
+    qemu-system-rx: for RX system emulator
+    qemu-system-s390x: for S390 system emulator
+    qemu-system-sh4: for SH4 system emulator
+    qemu-system-sparc: for SPARC system emulator
+    qemu-system-tricore: for tricore system emulator
+    qemu-system-xtensa: for Xtensa system emulator
+    qemu-tests: for QEMU tests
+    qemu-tools: for QEMU tools
+    qemu-user: for user mode emulation of QEMU targets
+    qemu-audio-alsa: for ALSA audio driver [pending]
+    qemu-audio-dbus: for D-Bus audio driver [pending]
+    qemu-audio-jack: for JACK audio driver [pending]
+    qemu-audio-oss: for OSS audio driver [pending]
+    qemu-audio-pa: for PulseAudio audio driver [pending]
+    qemu-audio-pipewire: for PipeWire audio driver [pending]
+    qemu-audio-sdl: for SDL audio driver [pending]
+    qemu-audio-spice: for spice audio driver [pending]
+    qemu-block-curl: for curl block driver [pending]
+    qemu-block-dmg: for DMG block driver [pending]
+    qemu-block-nfs: for NFS block driver [pending]
+    qemu-block-ssh: for SSH block driver [pending]
+    qemu-chardev-spice: for the spice chardev driver [pending]
+    qemu-desktop: for dependencies commonly used on a desktop [pending]
+    qemu-hw-display-qxl: for the QXL display device [pending]
+    qemu-hw-display-virtio-vga: for the virtio-vga display device [pending]
+    qemu-hw-display-virtio-vga-gl: for the virtio-vga-gl display device [pending]
+    qemu-hw-display-virtio-vga-rutabaga: for the virtio-vga-rutabaga display device [pending]
+    qemu-hw-display-virtio-gpu: for the virtio-gpu display device [pending]
+    qemu-hw-display-virtio-gpu-gl: for the virtio-gpu-gl display device [pending]
+    qemu-hw-display-virtio-gpu-rutabaga: for the virtio-gpu-rutabaga display device [pending]
+    qemu-hw-display-virtio-gpu-pci: for the virtio-gpu-pci display device [pending]
+    qemu-hw-display-virtio-gpu-pci-gl: for the virtio-gpu-pci-gl display device [pending]
+    qemu-hw-display-virtio-gpu-pci-rutabaga: for the virtio-gpu-pci-rutabaga display device [pending]
+    qemu-hw-uefi-vars: for UEFI variable support [pending]
+    qemu-hw-usb-host: for host USB support [pending]
+    qemu-hw-usb-redirect: for USB redirect support [pending]
+    qemu-hw-usb-smartcard: for USB smartcard support [pending]
+    qemu-ui-curses: for ncurses UI driver [pending]
+    qemu-ui-dbus: for D-Bus UI driver [pending]
+    qemu-ui-egl-headless: for EGL headless UI driver [pending]
+    qemu-ui-gtk: for GTK UI driver [pending]
+    qemu-ui-opengl: for OpenGL UI driver [pending]
+    qemu-ui-sdl: for SDL UI driver [pending]
+    qemu-ui-spice-app: for spice app UI driver [pending]
+    qemu-ui-spice-core: for spice core UI driver [pending]
+    qemu-user: for user mode emulation of QEMU targets
+    qemu-vhost-user-gpu: for vhost-user-gpu display device [pending]
+    qemu-vmsr-helper: for accessing the Running Average Power Limit (RAPL) MSR
+
+Optional dependencies for qemu-desktop
+    qemu-user-static: for static user mode emulation of QEMU targets
+    samba: for SMB/CIFS server support
+    qemu-block-gluster: for Gluster block driver
+    qemu-block-iscsi: for iSCSI block driver
+    qemu-chardev-baum: for Baum chardev driver
+    qemu-docs: for documentation
+    qemu-emulators-full: for all system emulators
+    qemu-full: for a full QEMU installation
+    qemu-hw-s390x-virtio-gpu-ccw: for s390x-virtio-gpu-ccw display device
+    qemu-pr-helper: for persistent reservation utility
+    qemu-system-aarch64: for AARCH64 system emulator
+    qemu-system-alpha: for Alpha system emulator
+    qemu-system-arm: for ARM system emulator
+    qemu-system-avr: for AVR system emulator
+    qemu-system-hppa: for HPPA system emulator
+    qemu-system-m68k: for ColdFire (m68k) system emulator
+    qemu-system-microblaze: for Microblaze system emulator
+    qemu-system-mips: for MIPS system emulator
+    qemu-system-or1k: for OpenRisc32 system emulator
+    qemu-system-ppc: for PPC system emulator
+    qemu-system-riscv: for RISC-V system emulator
+    qemu-system-rx: for RX system emulator
+    qemu-system-s390x: for S390 system emulator
+    qemu-system-sh4: for SH4 system emulator
+    qemu-system-sparc: for SPARC system emulator
+    qemu-system-tricore: for tricore system emulator
+    qemu-system-xtensa: for Xtensa system emulator
+    qemu-tests: for QEMU tests
+    qemu-tools: for QEMU tools
+    qemu-user: for user mode emulation of QEMU targets
+    qemu-vmsr-helper: for accessing the Running Average Power Limit (RAPL) MSR

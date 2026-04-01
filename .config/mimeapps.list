@@ -1,0 +1,19 @@
+[Default Applications]
+x-scheme-handler/http=org.mozilla.firefox.desktop
+application/xhtml+xml=org.mozilla.firefox.desktop
+text/html=org.mozilla.firefox.desktop
+x-scheme-handler/https=org.mozilla.firefox.desktop
+application/x-shellscript=org.gnome.TextEditor.desktop
+application/xml=org.gnome.TextEditor.desktop
+x-scheme-handler/mailto=org.gnome.Geary.desktop
+application/x-mswinurl=org.gnome.TextEditor.desktop
+
+[Added Associations]
+x-scheme-handler/http=org.mozilla.firefox.desktop;
+application/xhtml+xml=org.mozilla.firefox.desktop;
+text/html=org.mozilla.firefox.desktop;
+x-scheme-handler/https=org.mozilla.firefox.desktop;
+application/x-shellscript=org.gnome.TextEditor.desktop;
+application/xml=org.gnome.TextEditor.desktop;
+x-scheme-handler/mailto=org.gnome.Evolution.desktop;org.gnome.Geary.desktop;
+application/x-mswinurl=org.mozilla.firefox.desktop;org.gnome.TextEditor.desktop;

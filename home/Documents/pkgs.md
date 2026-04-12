@@ -85,7 +85,11 @@
 + fuse2 (para appimages)
 + gst-libav (plugins para showtime)
 + gst-plugins-ugly (plugins para showtime, con este reproduce .wmv)
-+ nss-mdns
++ nss-mdns (para avahi - impresora)
++ syncthing
++ nm-connection-editor (para cambiar mi wifi a la zona 'home' de firewalld)
++ ntfs-3g (gnome-disk-utility)
++ dosfstools (gnome-disk-utility)
 
 ## Services
 + firewalld.service
@@ -93,6 +97,7 @@
 + cups.socket
 + libvirtd.socket
 + avahi-daemon.socket
++ systemctl --user enable --now syncthing.service (sin doas porque es de usuario)
 
 ## Flatpaks
 + flatpak install flathub org.mozilla.firefox
@@ -105,10 +110,10 @@
 + flatpak install flathub com.github.flxzt.rnote
 + flatpak install flathub org.localsend.localsend_app
 + flatpak install flathub page.tesk.Refine
-+ flatpak install flathub org.gnome.Podcasts
 + flatpak install flathub com.github.johnfactotum.Foliate
 + flatpak install flathub com.vixalien.sticky
 + flatpak install flathub com.belmoussaoui.Authenticator
++ flatpak install flathub de.haeckerfelix.Fragments
 
 ## FONTS
 + ttf-iosevka-nerd

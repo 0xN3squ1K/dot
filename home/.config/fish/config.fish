@@ -52,7 +52,7 @@ alias .. 'cd ..'
 alias df 'df -h'
 alias free 'free -h'
 alias lsblk 'lsblk -p'
-alias zramctl 'zramctl --outputll'
+alias zramctl 'zramctl --output-all'
 alias tree 'tree -C'
 
 # pacman
